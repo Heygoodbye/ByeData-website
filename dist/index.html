@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ByeData is a lightweight Windows utility that keeps live network usage on your taskbar.">
+  <meta name="theme-color" content="#06382a">
+  <title>ByeData — Network usage at a glance</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ByeData home">
+      <img src="./byedata-cat.png" alt="" width="38" height="38">
+      <span>Bye<span>Data</span></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a class="nav-github" href="https://github.com/Heygoodbye/ByeData" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Lightweight Windows utility</div>
+        <h1>Your network usage, <em>right where you look.</em></h1>
+        <p class="hero-lede">ByeData keeps live download and upload totals on your taskbar—quietly, clearly, and without getting in your way.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/Heygoodbye/ByeData/releases/latest" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+            Download for Windows
+          </a>
+          <a class="button button-secondary" href="https://github.com/Heygoodbye/ByeData" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="requirements">Windows 10 or 11 <span>•</span> .NET 8 Desktop Runtime <span>•</span> Open source</p>
+      </div>
+
+      <div class="hero-visual" aria-label="Preview of ByeData">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <img class="hero-cat" src="./byedata-cat.png" alt="ByeData's white cat mascot with download and upload arrows">
+        <div class="app-card">
+          <div class="app-head">
+            <div class="app-title">
+              <img src="./byedata-cat.png" alt="" width="38" height="38">
+              <div><strong>ByeData</strong><span>Network usage, at a glance</span></div>
+            </div>
+            <button type="button" class="window-close" aria-label="Close preview">×</button>
+          </div>
+          <div class="usage-card">
+            <div class="card-label">USED THIS SESSION</div>
+            <strong class="total-number" data-total>3.48 GB</strong>
+            <button class="reset-button" type="button" data-reset>Reset data</button>
+            <div class="metric-row">
+              <div><span class="download">↓</span><small>Downloaded</small><strong data-downloaded>2.91 GB</strong></div>
+              <div><span class="upload">↑</span><small>Uploaded</small><strong data-uploaded>584 MB</strong></div>
+            </div>
+          </div>
+          <div class="settings-label">SETTINGS</div>
+          <div class="settings-card">
+            <label><span><strong>Launch at startup</strong><small>Start automatically with Windows</small></span><input type="checkbox" checked><i></i></label>
+            <label><span><strong>Daily reset</strong><small>Clear the counter on a new day</small></span><input type="checkbox" checked><i></i></label>
+            <label><span><strong>Compact taskbar</strong><small>Show one combined total</small></span><input type="checkbox" checked><i></i></label>
+          </div>
+        </div>
+        <div class="taskbar-pill">
+          <span class="pulse-dot"></span>
+          <strong data-taskbar>3.48 GB</strong>
+          <span class="taskbar-divider"></span>
+          <span>NET</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Highlights">
+      <div><strong>Live totals</strong><span>Download + upload</span></div>
+      <div><strong>Fullscreen aware</strong><span>Hides when you need focus</span></div>
+      <div><strong>Low resource</strong><span>Built to stay out of the way</span></div>
+    </section>
+
+    <section class="features section" id="features">
+      <div class="section-heading">
+        <div class="eyebrow"><span></span> Everything you need</div>
+        <h2>Small utility.<br>Thoughtful details.</h2>
+        <p>See the numbers that matter, choose how they appear, and keep a useful record without opening a heavy dashboard.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-primary">
+          <div class="icon-box" aria-hidden="true">↕</div>
+          <div>
+            <h3>One total or two</h3>
+            <p>Keep a compact combined number on the taskbar, or split downloads and uploads when you want the detail.</p>
+          </div>
+          <div class="display-demo" aria-hidden="true">
+            <span>Combined total</span><strong>3.48 GB</strong>
+            <div class="mini-taskbar"><i></i><b>3.48 GB</b><small>NET</small></div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon-box coral" aria-hidden="true">▣</div>
+          <h3>Knows when to disappear</h3>
+          <p>ByeData automatically hides during fullscreen games, movies, and presentations.</p>
+          <div class="focus-visual" aria-hidden="true"><span></span><span></span><span></span><b>FULLSCREEN</b></div>
+        </article>
+
+        <article class="feature-card log-card">
+          <div class="icon-box mint" aria-hidden="true">≡</div>
+          <h3>A daily history you can read</h3>
+          <p>LostDataLog records restarts, exits, resets, and day changes in plain text files.</p>
+          <div class="log-visual" aria-hidden="true">
+            <div><span>09:14</span><b>Session started</b><small>0 B</small></div>
+            <div><span>12:48</span><b>Manual reset</b><small>1.26 GB</small></div>
+            <div><span>18:32</span><b>Session closed</b><small>3.48 GB</small></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="how-panel">
+        <div class="how-copy">
+          <div class="eyebrow eyebrow-light"><span></span> Set it and forget it</div>
+          <h2>Always visible.<br>Never in the way.</h2>
+          <p>Launch ByeData once and it settles into your system tray. Your live total stays on the taskbar, while the flyout is one click away whenever you want details or settings.</p>
+          <ol>
+            <li><span>01</span><div><strong>Install</strong><small>Run the lightweight Windows setup.</small></div></li>
+            <li><span>02</span><div><strong>Choose your view</strong><small>Combined total or split download and upload.</small></div></li>
+            <li><span>03</span><div><strong>Carry on</strong><small>ByeData keeps count quietly in the background.</small></div></li>
+          </ol>
+        </div>
+        <div class="mascot-panel">
+          <span class="mascot-note">Quietly keeping count</span>
+          <img src="./byedata-cat.png" alt="ByeData cat mascot">
+          <div class="counter-chip"><span>↓ 2.91 GB</span><span>↑ 584 MB</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <img src="./byedata-cat.png" alt="" width="110" height="110">
+      <div>
+        <h2>Keep your data in sight.</h2>
+        <p>Free, open source, and made for Windows.</p>
+      </div>
+      <a class="button button-primary" href="https://github.com/Heygoodbye/ByeData/releases/latest" target="_blank" rel="noreferrer">Get ByeData <span aria-hidden="true">↓</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top">
+      <img src="./byedata-cat.png" alt="" width="34" height="34">
+      <span>Bye<span>Data</span></span>
+    </a>
+    <p>A lightweight network usage utility for Windows.</p>
+    <a href="https://github.com/Heygoodbye/ByeData" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
